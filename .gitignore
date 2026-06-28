@@ -1,0 +1,88 @@
+# =========================================================================
+# UNITY AUTOMATICALLY GENERATED FOLDERS AND FILES
+# =========================================================================
+/[Ll]ibrary/
+/[Ll]og/
+/[Ll]ogs/
+/[Ll]ocalCache/
+/[Ll]ockFile
+/[Ll]ocks/
+/[Ll]pPersistentManagerLocal.json
+/[Ll]pPersistentManagerLocal.txt
+/[Ll]pPersistentManagerLocal.backup
+/[Ll]pPersistentManagerLocal.data
+/[Ll]pPersistentManagerLocal.cache
+/[Ll]pPersistentManagerLocal.meta
+/[Tt]emp/
+/UserSetting/
+/UserSettings/
+/Obj/
+/MemoryCaptures/
+/Logs/
+/Build/
+/Builds/
+/Builds_*/
+/Autobuild/
+/Autobuilds/
+/PlaybackEngines/
+/AndroidPlayer/
+/iOSSupport/
+/WebGLSupport/
+
+# =========================================================================
+# TEXTURE PACKER & SPRITE ATLAS CACHES
+# =========================================================================
+/[Ll]pSpriteAtlasCache.json
+/[Ll]pSpriteAtlasCache.txt
+/[Ll]pSpriteAtlasCache.data
+/[Ll]pSpriteAtlasCache.cache
+
+# =========================================================================
+# ASSET STORE & PACKAGE MANAGER CACHES
+# =========================================================================
+/AssetStoreTools*
+/Assets/AssetStoreTools*
+/Packages/manifest-user.json
+/Packages/packages-lock.json
+
+# =========================================================================
+# IDE AND IDE PROJECTS GENERATED FILES (Visual Studio / Rider / VS Code)
+# =========================================================================
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# =========================================================================
+# OS GENERATED FILES
+# =========================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# =========================================================================
+# CRASH REPORTS & BUILDS OUTS
+# =========================================================================
+sysinfo.txt
+*.apk
+*.unitypackage
+*.aa/
