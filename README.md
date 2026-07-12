@@ -6,9 +6,11 @@ Un desarrollo de videojuego RPG por turnos con perspectiva 2.5D. Actualmente se 
 
 El valor real del proyecto radica en su arquitectura interna:
 * **Lógica Core Desacoplada:** Implementación de un flujo de trabajo optimizado utilizando **C# puro** para el núcleo del juego, permitiendo un entorno robusto para pruebas unitarias rápidas y flujos de diseño TDD aislados de los componentes nativos de Unity (`MonoBehaviour`).
+* **MVC + Patrón Mediador:** Aplicar la arquitectura MVC con **ScripteableObjects** como modelo, scripts **MonoBehaviour** como vista y scripts de **"C# puro""** como controladores, trabajando a su vez con el patrón mediador, para faciltiar el mantenimiento y mejorar el desacoplamiento.
 * **Gráficos Técnicos a Mano:** Todo el comportamiento visual: efectos de renderizado y estética técnica, se desarrollarán escribiendo código **HLSL puro** directamente (Iluminación, explosiones, humo, líquidos...).
+* **Exponer el Código y Git:** Mostrar cómo escribo/pienso el código y estructuro los scripts, cómo organizo las carpetas y archivos, además de trabajar con features intentando realizar ramas limpias y commits correctos.
 
-El fin principal de este repositorio **no es desarrollar un videojuego completo**, sino servir como entorno técnico de aprendizaje y experimentación personal.
+El fin principal de este repositorio **no es desarrollar un videojuego completo**, sino servir como entorno técnico de aprendizaje y experimentación personal con las estructuras mencionadas y el desarrollo en HLSL.
 
 No se descarta finalizar el videojuego si se percibe potencial en el proyecto.
 
