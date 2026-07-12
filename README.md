@@ -18,7 +18,7 @@ No se descarta finalizar el videojuego si se percibe potencial en el proyecto.
 
 ## 🎮 Sobre el Proyecto
 
-En **OwlProject** (nombre clave), se plantean las bases para acompañar a **Caro** y a su *party* en una serie de aventuras a través de un mundo que combina mecánicas de rol clásico, combates estratégicos por turnos y un entorno 2.5D (intersección de planos 2D en espacio tridimensional).
+En **OwlProject** (nombre clave), se plantean las bases para acompañar a **Carol** y a su *party* en una serie de aventuras a través de un mundo que combina mecánicas de rol clásico, combates estratégicos por turnos y un entorno 2.5D (intersección de planos 2D en espacio tridimensional).
 
 
 
