@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 18a23eb6fcd491047b4854e4965d8982, type: 3}
   m_Name: CamaraData
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Camera.Model.CamaraModel
-  _offset: {x: 0, y: 0.21, z: 0.68}
+  _offset: {x: 0, y: 0.17, z: -0.46}
