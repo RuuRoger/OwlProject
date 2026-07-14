@@ -38,7 +38,7 @@ En **OwlProject** (nombre clave), se plantean las bases para acompañar a **Caro
 
 Los recursos gráficos utilizados en este prototipo inicial pertenecen a sus respectivos creadores. A continuación se listan las fuentes y enlaces oficiales:
 
-* **Sprites del Personaje Principal (Caro):**
+* **Sprites del Personaje Principal (Carol):**
     * Autor: `[SSCARY]`
     * Enlace a su Itch.io: [Visitar sitio](https://sscary.itch.io/)
     * Enlace al recurso: [Visitar sitio](https://sscary.itch.io/the-adventurer-female)
