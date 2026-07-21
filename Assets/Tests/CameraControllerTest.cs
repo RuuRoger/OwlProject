@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using UnityEngine;
-using Assets.Scripts.Camera.Controller;
+using Assets.Core.Features.Camera.Controller;
 
 public class CameraControllerTest
 {

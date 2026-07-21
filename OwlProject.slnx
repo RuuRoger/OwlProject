@@ -1,6 +1,6 @@
 ﻿<Solution>
   <Project Path="Assembly-CSharp.csproj" />
-  <Project Path="CameraController.csproj" />
   <Project Path="Tests.csproj" />
+  <Project Path="CameraController.csproj" />
   <Project Path="PlayerController.csproj" />
 </Solution>
