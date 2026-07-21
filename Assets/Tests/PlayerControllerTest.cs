@@ -1,6 +1,6 @@
 using NUnit.Framework;
 using UnityEngine;
-using Assets.Scripts.Player.Controller;
+using Assets.Core.Features.Player.Controller;
 
 public class PlayerControllerTest
 {
