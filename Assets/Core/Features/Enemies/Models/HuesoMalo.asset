@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9af12bbe632d6f45b99ead854314e59, type: 3}
+  m_Name: HuesoMalo
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Features.Enemies.Models.EnemyData
+  _prefabEnemigo: {fileID: 2482051383197564456, guid: c53ac8c2a232ff44689364f71ee8940b, type: 3}
+  _vidaEnemigo: 120
+  _ataqueBasico: 25
+  _ataqueFuerte: 40
