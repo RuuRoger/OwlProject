@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using Assets.Core.Features.Enemies.Models;
+using System.Collections;
 
 namespace Assets.Core.Generics.Utils
 {
@@ -10,6 +11,7 @@ namespace Assets.Core.Generics.Utils
         ---------------------------------------------------- CAMPOS -----------------------------------------------------
         ================================================================================================================= */
         [SerializeField] private string _nombreEscena;
+        [SerializeField] private AnimacionesEscena _animacionesEscena;
         private static EnemyData _enemigo;
 
         /* ================================================================================================================
@@ -38,7 +40,6 @@ namespace Assets.Core.Generics.Utils
         private void OnDisable()
         {
             EnemigoEncontrado.OnEnemigoEncontrado -= HandleEnemiogoEncontrado;
-            
         }
 
         /* ================================================================================================================
@@ -47,6 +48,18 @@ namespace Assets.Core.Generics.Utils
         private void HandleEnemiogoEncontrado(EnemyData enemigoAEnfrentar)
         {
             Enemigo = enemigoAEnfrentar;
+            StartCoroutine(TransicionEscena());
+        }
+
+        private IEnumerator TransicionEscena()
+        {
+            _animacionesEscena.ActivarTransicion();
+            yield return null;
+
+            // Time.timeScale = 0f;
+            yield return new WaitForSecondsRealtime(2.5f);
+
+            // Time.timeScale = 1f;
             SceneManager.LoadScene(_nombreEscena);
         }
     }
