@@ -11,6 +11,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BatleMode.unity
     guid: 23ed8009df4dafa4c8c892969b9e5b8c
+  - enabled: 1
+    path: Assets/Scenes/PlayerLoose.unity
+    guid: 23ce4fe97b10f57499aa9110c86baecd
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
