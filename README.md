@@ -1,4 +1,4 @@
-# OwlProject (Nombre Clave)
+# Adventures of Carol
 
 Un desarrollo de videojuego RPG por turnos con perspectiva 2.5D. Actualmente se encuentra en una fase **muy inicial y de prototipado**. 
 
@@ -15,13 +15,26 @@ El fin principal de este repositorio **no es desarrollar un videojuego completo*
 No se descarta finalizar el videojuego si se percibe potencial en el proyecto.
 
 ---
+⚠️ ** Conclusiones del prototipo presentado **
+Ha sido un error forzar a Unity en trabajar en una arquitectura distinta a la suya. Unity está pensado para trabajar con programación orientada a componentes y facilita mucho el trabajo en "surfear" la arquitectura plantada de esta forma.
+Mi objetivo era poder tener un mayor control para pruebas unitarias con Nunit y no depender tanto del motor, pero quizás, hubiese sido mejor (en caso de insistir con esta arquitectura), en trabajar con otros motores mas minimalistas como MonoGame o Strade.
+No obstante, este proyecto me ha hecho valorar Unity como motor y tomar mejores decisiones para adaptar mi forma de trabajar o la necesidad del proyecto y con algo de acierto pero con confusión, en mi idea inicial en que no solo se tiene o se puede trabajar con Unity y Unreal Engine.
+
+Otro de mis objetivos era poder trabajar con un videojuego 2.5D y adaptar la cámara a este tipo de diseño, buscar un estilo "Paper Mario". He descubierto que es posible con cierto tipo de formas (como los arboles en el juego), pero con otro tipo de objetos como casas, pierde el efecto...
+
+No he podido plasmar conocimientos eh HLSL para este prototipo.
+Tampoco he conseguido adaptar la arquitectura MVC con un patrón mediador para los componentes como yo tenía pensado.
+
+No obstante, estoy contento por:
+- Haber podido trabajar con pruebas unitarias en Nunit con C# "puro"
+- Retos del proyecto como crear un sistema de diálogo básico
+- Controlar el combate por turnos
+- Valorar la arquitectura de Unity y las facilidades que ofrece si se fluye con su modo de trabajar
+- Valorar que Unity no es la única alternativa y que mi planteamiento inicial hubiese sido posible en otros motores más "crudos"
 
 ## 🎮 Sobre el Proyecto
 
-En **OwlProject** (nombre clave), se plantean las bases para acompañar a **Carol** y a su *party* en una serie de aventuras a través de un mundo que combina mecánicas de rol clásico, combates estratégicos por turnos y un entorno 2.5D (intersección de planos 2D en espacio tridimensional).
-
-
-
+En Adventures of Carol, se plantean las bases para acompañar a **Carol** y a su *party* en una serie de aventuras a través de un mundo que combina mecánicas de rol clásico, combates estratégicos por turnos y un entorno 2.5D (intersección de planos 2D en espacio tridimensional)
 ---
 
 ## 🛠️ Detalles Técnicos
