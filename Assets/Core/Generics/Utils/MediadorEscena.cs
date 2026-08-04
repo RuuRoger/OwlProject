@@ -20,11 +20,6 @@ namespace Assets.Core.Generics.Utils
         private static Vector3 m_triggerPosition;
         private static bool m_disableReloadedTrigger;
 
-        static MediadorEscena()
-        {
-            SceneManager.sceneLoaded += OnSceneLoaded;
-        }
-
         /* ================================================================================================================
         ---------------------------------------------------- PROPIEDADES -----------------------------------------------------
         ================================================================================================================= */
@@ -46,11 +41,13 @@ namespace Assets.Core.Generics.Utils
         private void OnEnable()
         {
             EnemigoEncontrado.OnEnemigoEncontrado += HandleEnemiogoEncontrado;
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
 
         private void OnDisable()
         {
             EnemigoEncontrado.OnEnemigoEncontrado -= HandleEnemiogoEncontrado;
+            SceneManager.sceneLoaded -= OnSceneLoaded;
         }
 
         private void HandleEnemiogoEncontrado(EnemyData enemigoAEnfrentar, Vector3 playerPosition, Quaternion playerRotation, GameObject triggerSource)
@@ -58,6 +55,7 @@ namespace Assets.Core.Generics.Utils
             Enemigo = enemigoAEnfrentar;
             GuardarEstadoSalida(playerPosition, playerRotation, triggerSource);
             DestroyTriggerSource();
+            AudioManager.Instance?.PlayTransitionMusic();
             StartCoroutine(TransicionEscena());
         }
 
@@ -73,14 +71,23 @@ namespace Assets.Core.Generics.Utils
                 m_triggerPosition = m_triggerSource.transform.position;
                 m_disableReloadedTrigger = true;
                 EnemigoEncontrado.IgnoreNextTriggerAt(m_triggerPosition, 1f);
+
+                if (m_triggerSource.TryGetComponent<PersistentTrigger>(out var persistentTrigger))
+                {
+                    PersistentTrigger.MarkDestroyed(persistentTrigger.TriggerId);
+                }
             }
         }
 
         private static void OnSceneLoaded(Scene scene, LoadSceneMode mode)
         {
-            if (scene.buildIndex != 0)
+            if (scene.buildIndex == 0)
             {
-                return;
+                AudioManager.Instance?.PlayOriginalMusic();
+            }
+            else
+            {
+                AudioManager.Instance?.StopMusic();
             }
 
             DisableReloadedTrigger();
@@ -126,6 +133,11 @@ namespace Assets.Core.Generics.Utils
             if (m_triggerSource == null)
             {
                 return;
+            }
+
+            if (m_triggerSource.TryGetComponent<TriggerDestroyCounter>(out var destroyCounter))
+            {
+                TriggerDestroyCounter.AddDestroyedTrigger();
             }
 
             Object.Destroy(m_triggerSource);
