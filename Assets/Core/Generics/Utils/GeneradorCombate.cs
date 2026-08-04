@@ -9,7 +9,7 @@ namespace Assets.Core.Generics.Utils
         /* ================================================================================================================
         ---------------------------------------------------- CAMPOS -----------------------------------------------------
         ================================================================================================================= */
-        [SerializeField] private Transform _spawnEnemigo;
+        [SerializeField] private Transform m_spawnEnemigo;
 
         /* ================================================================================================================
         ---------------------------------------------------- EVENTOS -----------------------------------------------------
@@ -22,7 +22,7 @@ namespace Assets.Core.Generics.Utils
         private void Start()
         {
             EnemyData datosEnemigo = MediadorEscena.Enemigo;
-            var enemigoInstanciado = Instantiate(datosEnemigo.PrefabEnemigo, _spawnEnemigo.position, _spawnEnemigo.rotation);
+            var enemigoInstanciado = Instantiate(datosEnemigo.PrefabEnemigo, m_spawnEnemigo.position, m_spawnEnemigo.rotation);
             OnTagEnemigo?.Invoke(enemigoInstanciado.tag);
 
             var spriteRender = enemigoInstanciado.GetComponentInChildren<SpriteRenderer>();

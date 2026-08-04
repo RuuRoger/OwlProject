@@ -10,15 +10,15 @@ namespace Assets.Core.Generics.Utils
         /* ================================================================================================================
         ---------------------------------------------------- CAMPOS -----------------------------------------------------
         ================================================================================================================= */
-        [SerializeField] private string _nombreEscena;
-        [SerializeField] private AnimacionesEscena _animacionesEscena;
-        private static EnemyData _enemigo;
-        private static GameObject _triggerSource;
+        [SerializeField] private string m_nombreEscena;
+        [SerializeField] private AnimacionesEscena m_animacionesEscena;
+        private static EnemyData m_enemigo;
+        private static GameObject m_triggerSource;
         private static Vector3 _playerPosition;
-        private static Quaternion _playerRotation;
-        private static bool _playerTransformGuardado;
-        private static Vector3 _triggerPosition;
-        private static bool _disableReloadedTrigger;
+        private static Quaternion m_playerRotation;
+        private static bool m_playerTransformGuardado;
+        private static Vector3 m_triggerPosition;
+        private static bool m_disableReloadedTrigger;
 
         static MediadorEscena()
         {
@@ -32,11 +32,11 @@ namespace Assets.Core.Generics.Utils
         {
             get
             {
-                return _enemigo;
+                return m_enemigo;
             }
             private set
             {
-                _enemigo = value;
+                m_enemigo = value;
             }
         }
 
@@ -64,15 +64,15 @@ namespace Assets.Core.Generics.Utils
         private static void GuardarEstadoSalida(Vector3 playerPosition, Quaternion playerRotation, GameObject triggerSource)
         {
             _playerPosition = playerPosition;
-            _playerRotation = playerRotation;
-            _playerTransformGuardado = true;
-            _triggerSource = triggerSource;
+            m_playerRotation = playerRotation;
+            m_playerTransformGuardado = true;
+            m_triggerSource = triggerSource;
 
-            if (_triggerSource != null)
+            if (m_triggerSource != null)
             {
-                _triggerPosition = _triggerSource.transform.position;
-                _disableReloadedTrigger = true;
-                EnemigoEncontrado.IgnoreNextTriggerAt(_triggerPosition, 1f);
+                m_triggerPosition = m_triggerSource.transform.position;
+                m_disableReloadedTrigger = true;
+                EnemigoEncontrado.IgnoreNextTriggerAt(m_triggerPosition, 1f);
             }
         }
 
@@ -91,7 +91,7 @@ namespace Assets.Core.Generics.Utils
 
         private static void DisableReloadedTrigger()
         {
-            if (!_disableReloadedTrigger)
+            if (!m_disableReloadedTrigger)
             {
                 return;
             }
@@ -99,49 +99,49 @@ namespace Assets.Core.Generics.Utils
             EnemigoEncontrado[] triggers = Object.FindObjectsByType<EnemigoEncontrado>(FindObjectsInactive.Include, FindObjectsSortMode.None);
             foreach (var trigger in triggers)
             {
-                if (Vector3.Distance(trigger.transform.position, _triggerPosition) < 0.2f)
+                if (Vector3.Distance(trigger.transform.position, m_triggerPosition) < 0.2f)
                 {
                     Object.Destroy(trigger.gameObject);
                     break;
                 }
             }
 
-            _disableReloadedTrigger = false;
+            m_disableReloadedTrigger = false;
         }
 
         public static void RestaurarTransformJugador(GameObject player)
         {
-            if (!_playerTransformGuardado || player == null)
+            if (!m_playerTransformGuardado || player == null)
             {
                 return;
             }
 
             player.transform.position = _playerPosition;
-            player.transform.rotation = _playerRotation;
-            _playerTransformGuardado = false;
+            player.transform.rotation = m_playerRotation;
+            m_playerTransformGuardado = false;
         }
 
         public static void DestroyTriggerSource()
         {
-            if (_triggerSource == null)
+            if (m_triggerSource == null)
             {
                 return;
             }
 
-            Object.Destroy(_triggerSource);
-            _triggerSource = null;
+            Object.Destroy(m_triggerSource);
+            m_triggerSource = null;
         }
 
         private IEnumerator TransicionEscena()
         {
-            _animacionesEscena.ActivarTransicion();
+            m_animacionesEscena.ActivarTransicion();
             yield return null;
 
             // Time.timeScale = 0f;
             yield return new WaitForSecondsRealtime(2.5f);
 
             // Time.timeScale = 1f;
-            SceneManager.LoadScene(_nombreEscena);
+            SceneManager.LoadScene(m_nombreEscena);
         }
     }
 }

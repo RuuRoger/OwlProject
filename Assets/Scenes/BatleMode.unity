@@ -626,7 +626,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dc15ef97e688084eb9440b7d6c8ec14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.GeneradorCombate
-  _spawnEnemigo: {fileID: 1173634678}
+  m_spawnEnemigo: {fileID: 1173634678}
 --- !u!4 &591879241
 Transform:
   m_ObjectHideFlags: 0
@@ -1202,7 +1202,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c1b6e085f0f84f47bb363dce0382db1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.Combate.ControladorDialogo
-  m_panelTexto: {fileID: 821963341}
   m_textoDialogo:
   - "\xBFQu\xE9 acci\xF3n vas a escoger?"
   - '{0} ha seleccionado "Atacar"'
@@ -1216,10 +1215,6 @@ MonoBehaviour:
   - "\xA1Un combate muy re\xF1ido!"
   - "\xA1Oh no! Carol ha sido derrotada..."
   - "\xA1{0} cae en batalla!"
-  m_textoUI: {fileID: 1940119665}
-  m_tiempoTipeo: 0.04
-  m_inicioTiempoTipeo: 0.3
-  m_trianguloTextoUI: {fileID: 1820937795}
   m_estadoVida:
   - {fileID: -409500011, guid: d98f2fbb6f87f6140b5411f22c3491bd, type: 3}
   - {fileID: 1786946175, guid: 169adea96a3106c41a237890f88c83c2, type: 3}
@@ -1228,10 +1223,15 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 74f918a3e2379584fa21c68839f91a81, type: 3}
   m_objVidaJugador: {fileID: 796400467}
   m_objVidaEnemigo: {fileID: 240460828}
+  m_panelTexto: {fileID: 821963341}
   m_atacarBotonUI: {fileID: 877411363}
   m_cargarBotonUI: {fileID: 329947429}
   m_defenderBotonUI: {fileID: 2137712324}
   m_leerBotonUI: {fileID: 1813639667}
+  m_trianguloTextoUI: {fileID: 1820937795}
+  m_textoUI: {fileID: 1940119665}
+  m_tiempoTipeo: 0.04
+  m_inicioTiempoTipeo: 0.3
 --- !u!1 &1312774672
 GameObject:
   m_ObjectHideFlags: 0

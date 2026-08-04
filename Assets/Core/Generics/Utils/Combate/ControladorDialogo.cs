@@ -4,8 +4,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
 using TMPro;
-using Assets.Core.Features.Player.View;
-using Assets.Core.Generics.Utils;
 
 namespace Assets.Core.Generics.Utils.Combate
 {
@@ -14,13 +12,11 @@ namespace Assets.Core.Generics.Utils.Combate
         /* ================================================================================================================
         ---------------------------------------------------- CAMPOS -----------------------------------------------------
         ================================================================================================================= */
-        [SerializeField] private GameObject m_panelTexto;
+        [Header("Inputs")]
         [SerializeField] private InputSystem_Actions m_inputPlayer;
+
+        [Header("Textos")]
         [SerializeField, TextArea] private string[] m_textoDialogo;
-        [SerializeField] private TMP_Text m_textoUI;
-        [SerializeField] private float m_tiempoTipeo = 0.05f;
-        [SerializeField] private float m_inicioTiempoTipeo = 1f;
-        [SerializeField] private GameObject m_trianguloTextoUI;
 
         [Header("Vida UI")]
         [SerializeField] private Sprite[] m_estadoVida;
@@ -28,19 +24,20 @@ namespace Assets.Core.Generics.Utils.Combate
         [SerializeField] private GameObject m_objVidaEnemigo;
 
         [Header("Textos UI")]
+        [SerializeField] private GameObject m_panelTexto;
         [SerializeField] private TMP_Text m_atacarBotonUI;
         [SerializeField] private TMP_Text m_cargarBotonUI;
         [SerializeField] private TMP_Text m_defenderBotonUI;
         [SerializeField] private TMP_Text m_leerBotonUI;
+        [SerializeField] private GameObject m_trianguloTextoUI;
+        [SerializeField] private TMP_Text m_textoUI;
+        [SerializeField] private float m_tiempoTipeo = 0.05f;
+        [SerializeField] private float m_inicioTiempoTipeo = 1f;
 
-        private string m_nombreJugador = "Carol";
-        
         private enum Accion { Ninguna = 0, Atacar = 1, Cargar = 2, Defender = 3 }
-
-        private const int k_VidaMax = 5;
-
         private int m_cargasJugador;
         private int m_cargasEnemigo;
+        private const int k_VidaMax = 5;
         private float m_vidaJugador = k_VidaMax;
         private float m_vidaEnemigo = k_VidaMax;
         private bool m_modoTexto;
@@ -48,6 +45,7 @@ namespace Assets.Core.Generics.Utils.Combate
         private bool m_esperandoSeleccion;
         private Accion m_accionJugador = Accion.Ninguna;
         private Accion m_accionEnemigo = Accion.Ninguna;
+        private string m_nombreJugador = "Carol";
         private string m_nombreEnemigo;
         private SpriteRenderer m_spriteVidaJugadorRenderer;
         private SpriteRenderer m_spriteVidaEnemigoRenderer;
@@ -55,9 +53,6 @@ namespace Assets.Core.Generics.Utils.Combate
         ---------------------------------------------------- EVENTOS -----------------------------------------------------
         ================================================================================================================= */
         public static event Action OnLeer;
-        public static event Action OnAtacar;
-        public static event Action OnCargar;
-        public static event Action OnDefenderse;
 
         /* ================================================================================================================
         ---------------------------------------------------- MÉTODOS DE UNITY -----------------------------------------------------
@@ -91,12 +86,6 @@ namespace Assets.Core.Generics.Utils.Combate
             m_inputPlayer.Combat.Disable();
             IniciadorDialogo.OnCombateIniciado -= ControlDialogo;
             GeneradorCombate.OnTagEnemigo -= EstablecerNombreEnemigo;
-        }
-
-        private void Update()
-        {
-            Debug.Log($"Cargas jugador: {m_cargasJugador}");
-            Debug.Log($"Cargas enemigo: {m_cargasEnemigo}");
         }
 
         /* ================================================================================================================

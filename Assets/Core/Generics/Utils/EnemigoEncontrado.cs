@@ -9,7 +9,7 @@ namespace Assets.Core.Generics.Utils
         /* ================================================================================================================
         ---------------------------------------------------- CAMPOS -----------------------------------------------------
         ================================================================================================================= */
-        [SerializeField] private EnemyData _enemyData;
+        [SerializeField] private EnemyData m_enemyData;
 
         private static Vector3 s_ignoreTriggerPosition;
         private static float s_ignoreTriggerRadius;
@@ -36,7 +36,7 @@ namespace Assets.Core.Generics.Utils
                 return;
             }
 
-            OnEnemigoEncontrado?.Invoke(_enemyData, other.transform.position, other.transform.rotation, gameObject);
+            OnEnemigoEncontrado?.Invoke(m_enemyData, other.transform.position, other.transform.rotation, gameObject);
         }
 
         private bool ShouldIgnoreThisTrigger()

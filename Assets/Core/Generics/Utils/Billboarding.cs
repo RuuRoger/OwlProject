@@ -5,14 +5,14 @@ namespace Assets.Core.Generics.Utils
 {
     public class Billboarding : MonoBehaviour
     {
-        [SerializeField] private Transform _camaraTransform;
-        [SerializeField] private bool _soloEjeY = true;
+        [SerializeField] private Transform m_camaraTransform;
+        [SerializeField] private bool m_soloEjeY = true;
 
         private void LateUpdate()
         {
-            if (_soloEjeY)
+            if (m_soloEjeY)
             {
-                var direccionCamara = _camaraTransform.forward;
+                var direccionCamara = m_camaraTransform.forward;
                 direccionCamara.y = 0f;
 
                 if (direccionCamara.sqrMagnitude > 0.001f)
@@ -22,7 +22,7 @@ namespace Assets.Core.Generics.Utils
             }
             else
             {
-                transform.rotation = _camaraTransform.rotation;
+                transform.rotation = m_camaraTransform.rotation;
             }
         }
 
