@@ -23,14 +23,14 @@ Mi objetivo era tener mayor control con pruebas unitarias usando NUnit y no depe
 En cuanto al apartado visual 2.5D (estilo *Paper Mario*), he comprobado que funciona bien con ciertos elementos aislados (como árboles), pero pierde el efecto con estructuras más complejas como casas.
 
 **Puntos no integrados en este prototipo:**
-- No se llegaron a plasmar los shaders en HLSL.
+- No se ha realizado los shaders en HLSL.
 - La adaptación de MVC con patrón mediador para componentes no quedó integrada como estaba planeada inicialmente.
 
 **Logros positivos:**
 - Pruebas unitarias integradas con **NUnit** sobre C# puro.
 - Implementación de un sistema de diálogo básico funcional.
 - Control y flujo de combate por turnos.
-- Comprensión profunda de la arquitectura interna de Unity y evaluación de alternativas.
+- Comprensión de la arquitectura interna de Unity y evaluación de alternativas.
 
 ---
 
