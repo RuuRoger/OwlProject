@@ -7,7 +7,7 @@ namespace Assets.Core.Features.Camera.Model
     {
         [SerializeField]
         [Tooltip("Distancia de la cámara respecto al player")]
-        private Vector3 _offset = new Vector3(0f, 5f, -5f);
-        public Vector3 Offset => _offset;
+        private Vector3 m_offset = new Vector3(0f, 5f, -5f);
+        public Vector3 Offset => m_offset;
     }
 }

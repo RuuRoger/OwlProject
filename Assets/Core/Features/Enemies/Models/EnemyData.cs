@@ -9,10 +9,7 @@ namespace Assets.Core.Features.Enemies.Models
         /* ================================================================================================================
         ---------------------------------------------------- CAMPOS -----------------------------------------------------
         ================================================================================================================= */
-        [SerializeField] private GameObject _prefabEnemigo;
-        [SerializeField] private float _vidaEnemigo;
-        [SerializeField] private float _ataqueBasico;
-        [SerializeField] private float _ataqueFuerte;
+        [SerializeField] private GameObject m_prefabEnemigo;
 
         /* ================================================================================================================
         ---------------------------------------------------- PROPIEDADES -----------------------------------------------------
@@ -21,48 +18,7 @@ namespace Assets.Core.Features.Enemies.Models
         {
             get
             {
-                return _prefabEnemigo;
-            }
-        }
-
-        public float VidaEnemigo
-        {
-            get
-            {
-                return _vidaEnemigo;
-            }
-            set
-            {
-                _vidaEnemigo = value;
-                
-                if (_vidaEnemigo <= 0)
-                {
-                    _vidaEnemigo = 0f;
-                }
-            }
-        }
-
-        public float AtaqueBasico
-        {
-            get
-            {
-                return _ataqueBasico; 
-            }
-            set
-            {
-                _ataqueBasico = value;
-            }
-        }
-    
-        public float AtaqueFuerte
-        {
-            get
-            {
-                return _ataqueFuerte;
-            }
-            set
-            {
-                _ataqueFuerte = value;
+                return m_prefabEnemigo;
             }
         }
     }

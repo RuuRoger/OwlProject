@@ -228,8 +228,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &133076596
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,8 +334,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &160126657
 GameObject:
   m_ObjectHideFlags: 0
@@ -519,8 +519,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &330585543
 GameObject:
   m_ObjectHideFlags: 0
@@ -671,8 +671,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6145fb5241183154bbcd45aab79b5898, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Camera.Mediator.CamaraMediador
-  _playerTransform: {fileID: 20097963}
-  _camaraModel: {fileID: 11400000, guid: 0737c3e8d3a45b7448809e03d87d04da, type: 2}
+  m_playerTransform: {fileID: 20097963}
+  m_camaraModel: {fileID: 11400000, guid: 0737c3e8d3a45b7448809e03d87d04da, type: 2}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,8 +829,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3115529d75952f945b1eb4f4fed05f3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.MediadorEscena
-  _nombreEscena: BatleMode
-  _animacionesEscena: {fileID: 1839445558}
+  m_nombreEscena: BatleMode
+  m_animacionesEscena: {fileID: 1839445558}
 --- !u!4 &446623808
 Transform:
   m_ObjectHideFlags: 0
@@ -950,8 +950,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &520957630
 GameObject:
   m_ObjectHideFlags: 0
@@ -1103,8 +1103,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &606172850
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,8 +1209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &673008107
 GameObject:
   m_ObjectHideFlags: 0
@@ -1315,8 +1315,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &674593905
 GameObject:
   m_ObjectHideFlags: 0
@@ -1421,8 +1421,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &682893641
 GameObject:
   m_ObjectHideFlags: 0
@@ -1527,8 +1527,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &726167149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1633,8 +1633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &785449191
 GameObject:
   m_ObjectHideFlags: 0
@@ -1683,8 +1683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!212 &785449194
 SpriteRenderer:
   serializedVersion: 2
@@ -1799,7 +1799,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b04eab005804a6469cd288afeeb8232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
-  _enemyData: {fileID: 0}
+  m_enemyData: {fileID: 0}
 --- !u!4 &792578091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5636933688275295029, guid: 4b925dc95d271ee4786bb8d0f24404ae, type: 3}
@@ -1958,8 +1958,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &1082020387
 GameObject:
   m_ObjectHideFlags: 0
@@ -1993,8 +1993,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!212 &1082020389
 SpriteRenderer:
   serializedVersion: 2
@@ -2124,7 +2124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b04eab005804a6469cd288afeeb8232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
-  _enemyData: {fileID: 11400000, guid: aecdc37b459b5f84ca7a1a616cfa0e5f, type: 2}
+  m_enemyData: {fileID: 11400000, guid: aecdc37b459b5f84ca7a1a616cfa0e5f, type: 2}
 --- !u!1 &1112938495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2173,8 +2173,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!212 &1112938498
 SpriteRenderer:
   serializedVersion: 2
@@ -2289,7 +2289,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b04eab005804a6469cd288afeeb8232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
-  _enemyData: {fileID: 0}
+  m_enemyData: {fileID: 0}
 --- !u!1 &1229098106
 GameObject:
   m_ObjectHideFlags: 0
@@ -2496,8 +2496,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &1583801971
 GameObject:
   m_ObjectHideFlags: 0
@@ -2602,8 +2602,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &1699542065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,8 +2821,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &1810109287
 GameObject:
   m_ObjectHideFlags: 0
@@ -2968,7 +2968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef6b93d8eb71a244cac481da7022a4c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.AnimacionesEscena
-  _animator: {fileID: 1839445555}
+  m_animator: {fileID: 1839445555}
 --- !u!1 &1924137295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3108,39 +3108,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Scripts.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
---- !u!1 &2022617029
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2022617030}
-  m_Layer: 0
-  m_Name: Houses
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2022617030
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2022617029}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.44962, y: 0, z: 1.16148}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!1 &2084591678
 GameObject:
   m_ObjectHideFlags: 0
@@ -3189,8 +3158,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a54b658ae21ae14da91374adc5977d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.Billboarding
-  _camaraTransform: {fileID: 330585546}
-  _soloEjeY: 1
+  m_camaraTransform: {fileID: 330585546}
+  m_soloEjeY: 1
 --- !u!212 &2084591681
 SpriteRenderer:
   serializedVersion: 2
@@ -3305,7 +3274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b04eab005804a6469cd288afeeb8232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
-  _enemyData: {fileID: 0}
+  m_enemyData: {fileID: 0}
 --- !u!1001 &162050723682082453
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3419,6 +3388,10 @@ PrefabInstance:
       propertyPath: _camaraTransform
       value: 
       objectReference: {fileID: 330585546}
+    - target: {fileID: 6246582866410567766, guid: 4b925dc95d271ee4786bb8d0f24404ae, type: 3}
+      propertyPath: m_camaraTransform
+      value: 
+      objectReference: {fileID: 330585546}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3435,5 +3408,4 @@ SceneRoots:
   - {fileID: 162050723682082453}
   - {fileID: 520957631}
   - {fileID: 1924137296}
-  - {fileID: 2022617030}
   - {fileID: 1810109288}
