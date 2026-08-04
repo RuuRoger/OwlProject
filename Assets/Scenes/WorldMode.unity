@@ -1796,6 +1796,8 @@ GameObject:
   - component: {fileID: 785449197}
   - component: {fileID: 785449195}
   - component: {fileID: 785449196}
+  - component: {fileID: 785449198}
+  - component: {fileID: 785449199}
   m_Layer: 0
   m_Name: Enemy (1)
   m_TagString: Untagged
@@ -1947,6 +1949,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
   m_enemyData: {fileID: 11400000, guid: aecdc37b459b5f84ca7a1a616cfa0e5f, type: 2}
+--- !u!114 &785449198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785449191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e039de0b27e19944b19d896e208fc71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.PersistentTrigger
+  m_triggerId: 1
+--- !u!114 &785449199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 785449191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97f066c35c81a041a1eda9dc4417a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.TriggerDestroyCounter
+  m_targetCount: 4
+  m_targetSceneIndex: 3
 --- !u!4 &792578091 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5636933688275295029, guid: 4b925dc95d271ee4786bb8d0f24404ae, type: 3}
@@ -2121,6 +2150,8 @@ GameObject:
   - component: {fileID: 1082020393}
   - component: {fileID: 1082020391}
   - component: {fileID: 1082020392}
+  - component: {fileID: 1082020394}
+  - component: {fileID: 1082020395}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -2272,6 +2303,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
   m_enemyData: {fileID: 11400000, guid: aecdc37b459b5f84ca7a1a616cfa0e5f, type: 2}
+--- !u!114 &1082020394
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082020387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e039de0b27e19944b19d896e208fc71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.PersistentTrigger
+  m_triggerId: 0
+--- !u!114 &1082020395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082020387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97f066c35c81a041a1eda9dc4417a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.TriggerDestroyCounter
+  m_targetCount: 4
+  m_targetSceneIndex: 3
 --- !u!1 &1112938495
 GameObject:
   m_ObjectHideFlags: 0
@@ -2286,6 +2344,8 @@ GameObject:
   - component: {fileID: 1112938501}
   - component: {fileID: 1112938499}
   - component: {fileID: 1112938500}
+  - component: {fileID: 1112938502}
+  - component: {fileID: 1112938503}
   m_Layer: 0
   m_Name: Enemy (3)
   m_TagString: Untagged
@@ -2437,6 +2497,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
   m_enemyData: {fileID: 11400000, guid: aecdc37b459b5f84ca7a1a616cfa0e5f, type: 2}
+--- !u!114 &1112938502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112938495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e039de0b27e19944b19d896e208fc71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.PersistentTrigger
+  m_triggerId: 3
+--- !u!114 &1112938503
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112938495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97f066c35c81a041a1eda9dc4417a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.TriggerDestroyCounter
+  m_targetCount: 4
+  m_targetSceneIndex: 3
 --- !u!1 &1229098106
 GameObject:
   m_ObjectHideFlags: 0
@@ -3271,6 +3358,8 @@ GameObject:
   - component: {fileID: 2084591684}
   - component: {fileID: 2084591682}
   - component: {fileID: 2084591683}
+  - component: {fileID: 2084591685}
+  - component: {fileID: 2084591686}
   m_Layer: 0
   m_Name: Enemy (2)
   m_TagString: Untagged
@@ -3422,6 +3511,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.EnemigoEncontrado
   m_enemyData: {fileID: 11400000, guid: aecdc37b459b5f84ca7a1a616cfa0e5f, type: 2}
+--- !u!114 &2084591685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084591678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e039de0b27e19944b19d896e208fc71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.PersistentTrigger
+  m_triggerId: 2
+--- !u!114 &2084591686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2084591678}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f97f066c35c81a041a1eda9dc4417a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Assets.Core.Generics.Utils.TriggerDestroyCounter
+  m_targetCount: 4
+  m_targetSceneIndex: 3
 --- !u!1001 &162050723682082453
 PrefabInstance:
   m_ObjectHideFlags: 0
