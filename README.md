@@ -2,62 +2,65 @@
 
 Un desarrollo de videojuego RPG por turnos con perspectiva 2.5D. Actualmente se encuentra en una fase **muy inicial y de prototipado**. 
 
-⚠️ **OBJETIVO DEL PROYECTO:** 
+⚠️ **OBJETIVO DEL PROYECTO**
 
-El valor real del proyecto radica en su arquitectura interna:
-* **Lógica Core Desacoplada:** Implementación de un flujo de trabajo optimizado utilizando **C# puro** para el núcleo del juego, permitiendo un entorno robusto para pruebas unitarias rápidas y flujos de diseño TDD aislados de los componentes nativos de Unity (`MonoBehaviour`).
-* **MVC + Patrón Mediador:** Aplicar la arquitectura MVC con **ScripteableObjects** como modelo, scripts **MonoBehaviour** como vista y scripts de **"C# puro""** como controladores, trabajando a su vez con el patrón mediador, para faciltiar el mantenimiento y mejorar el desacoplamiento.
-* **Gráficos Técnicos a Mano:** Todo el comportamiento visual: efectos de renderizado y estética técnica, se desarrollarán escribiendo código **HLSL puro** directamente (Iluminación, explosiones, humo, líquidos...).
-* **Exponer el Código y Git:** Mostrar cómo escribo/pienso el código y estructuro los scripts, cómo organizo las carpetas y archivos, además de trabajar con features intentando realizar ramas limpias y commits correctos.
+El valor real de este proyecto radica en su arquitectura interna:
+* **Lógica Core Desacoplada:** Implementación de un flujo de trabajo utilizando **C# puro** para el núcleo del juego, permitiendo un entorno robusto para pruebas unitarias rápidas y flujos de diseño TDD aislados de los componentes nativos de Unity (`MonoBehaviour`).
+* **MVC + Patrón Mediador:** Aplicación de la arquitectura MVC utilizando **ScriptableObjects** como modelo, scripts **MonoBehaviour** como vista y controladores en **C# puro**, coordinados mediante un patrón mediador para facilitar el mantenimiento y el desacoplamiento.
+* **Gráficos Técnicos a Mano:** Desarrollo del comportamiento visual y estética técnica escribiendo código **HLSL puro** directamente (iluminación, efectos, partículas, etc.).
+* **Código Limpio y Git:** Mostrar la estructuración de scripts, organización del proyecto y un flujo de trabajo con Git basado en ramas por *features* y *commits* descriptivos.
 
-El fin principal de este repositorio **no es desarrollar un videojuego completo**, sino servir como entorno técnico de aprendizaje y experimentación personal con las estructuras mencionadas y el desarrollo en HLSL.
-
-No se descarta finalizar el videojuego si se percibe potencial en el proyecto.
+El fin principal de este repositorio **no es desarrollar un videojuego completo**, sino servir como entorno técnico de aprendizaje y experimentación personal. No se descarta finalizar el juego si el proyecto muestra potencial.
 
 ---
-⚠️ ** Conclusiones del prototipo presentado **
-Ha sido un error forzar a Unity en trabajar en una arquitectura distinta a la suya. Unity está pensado para trabajar con programación orientada a componentes y facilita mucho el trabajo en "surfear" la arquitectura plantada de esta forma.
-Mi objetivo era poder tener un mayor control para pruebas unitarias con Nunit y no depender tanto del motor, pero quizás, hubiese sido mejor (en caso de insistir con esta arquitectura), en trabajar con otros motores mas minimalistas como MonoGame o Strade.
-No obstante, este proyecto me ha hecho valorar Unity como motor y tomar mejores decisiones para adaptar mi forma de trabajar o la necesidad del proyecto y con algo de acierto pero con confusión, en mi idea inicial en que no solo se tiene o se puede trabajar con Unity y Unreal Engine.
 
-Otro de mis objetivos era poder trabajar con un videojuego 2.5D y adaptar la cámara a este tipo de diseño, buscar un estilo "Paper Mario". He descubierto que es posible con cierto tipo de formas (como los arboles en el juego), pero con otro tipo de objetos como casas, pierde el efecto...
+⚠️ **Conclusiones del prototipo**
 
-No he podido plasmar conocimientos eh HLSL para este prototipo.
-Tampoco he conseguido adaptar la arquitectura MVC con un patrón mediador para los componentes como yo tenía pensado.
+Uno de los principales aprendizajes ha sido comprobar la fricción que genera forzar a Unity a trabajar fuera de su paradigma natural (programación orientada a componentes). 
 
-No obstante, estoy contento por:
-- Haber podido trabajar con pruebas unitarias en Nunit con C# "puro"
-- Retos del proyecto como crear un sistema de diálogo básico
-- Controlar el combate por turnos
-- Valorar la arquitectura de Unity y las facilidades que ofrece si se fluye con su modo de trabajar
-- Valorar que Unity no es la única alternativa y que mi planteamiento inicial hubiese sido posible en otros motores más "crudos"
+Mi objetivo era tener mayor control con pruebas unitarias usando NUnit y no depender tanto del motor y usar una arquitectura MVC. Sin embargo, para insistir en una arquitectura tan desacoplada, habría sido más orgánico trabajar con motores o frameworks más minimalistas o "crudos" (como **MonoGame** o **Stride**). No obstante, esta prueba me ha servido para valorar las facilidades nativas de Unity y tomar mejores decisiones según la necesidad del proyecto.
+
+En cuanto al apartado visual 2.5D (estilo *Paper Mario*), he comprobado que funciona bien con ciertos elementos aislados (como árboles), pero pierde el efecto con estructuras más complejas como casas.
+
+**Puntos no integrados en este prototipo:**
+- No se llegaron a plasmar los shaders en HLSL.
+- La adaptación de MVC con patrón mediador para componentes no quedó integrada como estaba planeada inicialmente.
+
+**Logros positivos:**
+- Pruebas unitarias integradas con **NUnit** sobre C# puro.
+- Implementación de un sistema de diálogo básico funcional.
+- Control y flujo de combate por turnos.
+- Comprensión profunda de la arquitectura interna de Unity y evaluación de alternativas.
+
+---
 
 ## 🎮 Sobre el Proyecto
 
-En Adventures of Carol, se plantean las bases para acompañar a **Carol** y a su *party* en una serie de aventuras a través de un mundo que combina mecánicas de rol clásico, combates estratégicos por turnos y un entorno 2.5D (intersección de planos 2D en espacio tridimensional)
+En **Adventures of Carol** se plantean las bases para acompañar a Carol y a su *party* en un mundo que combina mecánicas de rol clásico, combates estratégicos por turnos y un entorno visual 2.5D (sprites 2D integrados en un espacio tridimensional).
+
 ---
 
 ## 🛠️ Detalles Técnicos
 
-* **Motor de Videojuego:** Unity 6.3 LTS (6000.3.12f1)
-* **Sistema de Entrada:** Unity Input System (Paquete guiado por eventos)
-* **Programación Gráfica:** Shaders custom escritos a mano en **HLSL**
-* **Arquitectura:** Component-Based Architecture + Patrón Mediador (para la orquestación de componentes mediante un PlayerManager)
-* **Perspectiva Visual:** 2.5D (Sprites Pixel Art orientados en espacio 3D)
+* **Motor de Videojuego:** Unity 6 LTS
+* **Sistema de Entrada:** Unity Input System (guiado por eventos)
+* **Programación Gráfica:** HLSL *(en fase de estudio/desarrollo)*
+* **Arquitectura:** Component-Based + Patrón Mediador (orquestación mediante `PlayerManager`)
+* **Perspectiva Visual:** 2.5D (Sprites Pixel Art en espacio 3D)
 
 ---
 
 ## 🎨 Créditos y Recursos Visuales
 
-Los recursos gráficos utilizados en este prototipo inicial pertenecen a sus respectivos creadores. A continuación se listan las fuentes y enlaces oficiales:
+Los recursos gráficos utilizados en este prototipo pertenecen a sus respectivos creadores:
 
 * **Sprites del Personaje Principal (Carol):**
-    * Autor: `[SSCARY]`
-    * Enlace a su Itch.io: [Visitar sitio](https://sscary.itch.io/)
-    * Enlace al recurso: [Visitar sitio](https://sscary.itch.io/the-adventurer-female)
-    
+  * Autor: `[SSCARY]`
+  * Perfil en Itch.io: [Visitar sitio](https://sscary.itch.io/)
+  * Recurso: [The Adventurer Female](https://sscary.itch.io/the-adventurer-female)
+
 ---
 
 ## 🚀 Estado del Desarrollo
 
-- Prototipando
+- 🟡 Prototipando / Investigación técnica
